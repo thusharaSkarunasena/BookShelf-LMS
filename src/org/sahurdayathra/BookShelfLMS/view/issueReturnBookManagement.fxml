@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="issueReturnBookManagementAnchPane" prefHeight="650.0" prefWidth="1050.0" styleClass="mainFxmlClass" stylesheets="@style/issuereturnbookmanagement.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sahurdayathra.BookShelfLMS.controller.IssueReturnBookManagementController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="130.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="130.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_3.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="650.0" prefWidth="130.0" style="-fx-background-color: #FF5C58;">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="7.0" layoutY="525.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/sahurda_yathra_logo_2.png" />
+                     </image>
+                  </ImageView>
+                  <HBox fx:id="homeHBox" onMouseClicked="#homeHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/issuereturnbookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Home_32px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Home">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="viewMoreHBox" layoutY="60.0" onMouseClicked="#viewMoreHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/issuereturnbookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_View_More_32px_1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="View&#10;More">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="helpHBox" layoutY="120.0" onMouseClicked="#helpHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/issuereturnbookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Help_32px_1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Help">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="130.0" prefHeight="60.0" prefWidth="920.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="920.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_4.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="60.0" prefWidth="920.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Issue / Return Books Management" textFill="#df574b">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="130.0" layoutY="60.0" prefHeight="590.0" prefWidth="920.0">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="594.0" layoutY="-1.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="612.0" fitWidth="587.0" layoutX="326.0" layoutY="-1.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-14.0" layoutY="-2.0" prefHeight="590.0" prefWidth="920.0">
+               <children>
+                  <Pane fx:id="issueBooksPane" layoutX="80.0" layoutY="15.0" prefHeight="560.0" prefWidth="360.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 15; -fx-border-width: 2;">
+                     <children>
+                        <JFXButton fx:id="issueBooksPane_issueBtn" buttonType="RAISED" layoutX="250.0" layoutY="520.0" onAction="#issueBooksPane_issueBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="issueReturnBtn" stylesheets="@style/issuereturnbookmanagement.css" text="Issue">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="issueBooksPane_clearBtn" buttonType="RAISED" layoutX="140.0" layoutY="520.0" onAction="#issueBooksPane_clearBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="clearBtn" stylesheets="@style/issuereturnbookmanagement.css" text="Clear">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Label layoutX="30.0" layoutY="14.0" text="Issue Books" underline="true">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="40.0" layoutY="50.0" prefHeight="175.0" prefWidth="280.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 5; -fx-border-width: 1;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="10.0" text="Library Reg. Number" textFill="#8f8f8f" />
+                              <Label layoutX="15.0" layoutY="40.0" text="MEM.">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="issueBooksPane_libRegNo_num_TF" alignment="BOTTOM_CENTER" focusColor="#ff5c58" layoutX="52.0" layoutY="25.0" onAction="#issueBooksPane_libRegNo_num_TF_onAction" onKeyReleased="#issueBooksPane_libRegNo_num_TF_keyReleased" prefHeight="25.0" prefWidth="100.0" promptText="000000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="issueBooksPane_admissionNoTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="78.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Admission Number">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="issueBooksPane_memberNameTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="128.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Member Name">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="190.0" layoutY="10.0" prefHeight="17.0" prefWidth="68.0" text="Borrow ID" textFill="#8f8f8f" />
+                              <JFXTextField fx:id="issueBooksPane_borrowIDTF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="190.0" layoutY="25.0" mouseTransparent="true" prefHeight="25.0" prefWidth="75.0" promptText="0000000000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="40.0" layoutY="240.0" prefHeight="175.0" prefWidth="280.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 5; -fx-border-width: 1;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="10.0" text="Book Code" textFill="#8f8f8f" />
+                              <JFXTextField fx:id="issueBooksPane_bookTitleTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="80.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Book Title">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="issueBooksPane_authorNameTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="130.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Author Name">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="issueBooksPane_bookCode_num1_TF" alignment="BOTTOM_CENTER" focusColor="#ff5c58" layoutX="73.0" layoutY="33.0" onAction="#issueBooksPane_bookCode_num1_TF_onAction" onKeyReleased="#issueBooksPane_bookCode_num1_TF_onKeyReleased" prefHeight="25.0" prefWidth="50.0" promptText="000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="issueBooksPane_bookCode_num2_TF" alignment="BOTTOM_CENTER" focusColor="#ff5c58" layoutX="131.0" layoutY="33.0" onAction="#issueBooksPane_bookCode_num2_TF_onAction" onKeyReleased="#issueBooksPane_bookCode_num2_TF_onKeyReleased" prefHeight="25.0" prefWidth="50.0" promptText="000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="125.0" layoutY="48.0" text=".">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="issueBooksPane_bookCode_txt_TF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="15.0" layoutY="33.0" mouseTransparent="true" prefHeight="25.0" prefWidth="50.0" promptText="ABC">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="67.0" layoutY="48.0" text=".">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="40.0" layoutY="440.0" text="Issue Date : ">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="475.0" text="Due Date : ">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="issueBooksPane_issueDateLbl" layoutX="115.0" layoutY="440.0" prefHeight="18.0" prefWidth="200.0" text="__.__.__">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="issueBooksPane_dueDateLbl" layoutX="115.0" layoutY="475.0" prefHeight="18.0" prefWidth="200.0" text="__.__.__">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="returnBooksPane" layoutX="500.0" layoutY="15.0" prefHeight="560.0" prefWidth="360.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 15; -fx-border-width: 2;">
+                     <children>
+                        <JFXButton fx:id="returnBooksPane_returnBtn" buttonType="RAISED" layoutX="250.0" layoutY="520.0" onAction="#returnBooksPane_returnBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="issueReturnBtn" stylesheets="@style/issuereturnbookmanagement.css" text="Return">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="returnBooksPane_clearBtn" buttonType="RAISED" layoutX="140.0" layoutY="520.0" onAction="#returnBooksPane_clearBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="clearBtn" stylesheets="@style/issuereturnbookmanagement.css" text="Clear">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Label layoutX="30.0" layoutY="14.0" text="Return Books" underline="true">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="40.0" layoutY="50.0" prefHeight="175.0" prefWidth="280.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 5; -fx-border-width: 1;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="10.0" text="Library Reg. Number" textFill="#8f8f8f" />
+                              <Label layoutX="15.0" layoutY="40.0" text="MEM.">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="returnBooksPane_libRegNo_num_TF" alignment="BOTTOM_CENTER" focusColor="#ff5c58" layoutX="52.0" layoutY="25.0" onAction="#returnBooksPane_libRegNo_num_TF_onAction" onKeyReleased="#returnBooksPane_libRegNo_num_TF_keyReleased" prefHeight="25.0" prefWidth="100.0" promptText="000000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="returnBooksPane_admissionNoTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="75.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Admission Number">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="returnBooksPane_memberNameTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="125.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText=" Member Name">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="190.0" layoutY="10.0" prefHeight="17.0" prefWidth="68.0" text="Borrow ID" textFill="#8f8f8f" />
+                              <JFXTextField fx:id="returnBooksPane_borrowIDTF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="190.0" layoutY="25.0" mouseTransparent="true" prefHeight="25.0" prefWidth="75.0" promptText="0000000000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="40.0" layoutY="240.0" prefHeight="175.0" prefWidth="280.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 5; -fx-border-width: 1;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="10.0" text="Book Code" textFill="#8f8f8f" />
+                              <JFXTextField fx:id="returnBooksPane_bookCode_num1_TF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="73.0" layoutY="25.0" mouseTransparent="true" prefHeight="25.0" prefWidth="50.0" promptText="000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="returnBooksPane_bookTitleTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="75.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Book Title">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="returnBooksPane_authorNameTF" editable="false" focusColor="#ff5c58" labelFloat="true" layoutX="15.0" layoutY="125.0" mouseTransparent="true" prefHeight="25.0" prefWidth="250.0" promptText="Author Name">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="returnBooksPane_bookCode_num2_TF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="131.0" layoutY="25.0" mouseTransparent="true" prefHeight="25.0" prefWidth="50.0" promptText="000">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="125.0" layoutY="40.0" text=".">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="returnBooksPane_bookCode_txt_TF" alignment="BOTTOM_CENTER" editable="false" focusColor="#ff5c58" layoutX="15.0" layoutY="25.0" mouseTransparent="true" prefHeight="25.0" prefWidth="50.0" promptText="ABC">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="67.0" layoutY="40.0" text=".">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="40.0" layoutY="430.0" text="Issued Date : ">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="460.0" text="Due Date : ">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="490.0" text="Returned Date : ">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="returnBooksPane_issuedDateLbl" layoutX="115.0" layoutY="430.0" prefHeight="18.0" prefWidth="200.0" text="__.__.__">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="returnBooksPane_dueDateLbl" layoutX="115.0" layoutY="460.0" prefHeight="18.0" prefWidth="200.0" text="__.__.__">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="returnBooksPane_returnedDateLbl" layoutX="135.0" layoutY="490.0" prefHeight="18.0" prefWidth="200.0" text="__.__.__">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

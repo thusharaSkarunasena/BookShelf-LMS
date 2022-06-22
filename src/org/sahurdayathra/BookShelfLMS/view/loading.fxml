@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="loadingAnchPane" minHeight="390.0" minWidth="590.0" prefHeight="390.0" prefWidth="590.0" stylesheets="@style/loading.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sahurdayathra.BookShelfLMS.controller.LoadingController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_6.jpg" />
+               </image></ImageView>
+            <Pane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="copyrightLbl" layoutX="205.0" layoutY="381.0" prefHeight="18.0" prefWidth="189.0" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Century Schoolbook Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="260.0" layoutY="383.0">
+                     <image>
+                        <Image url="@../asset/icons8_Copyright_15px_1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="380.0" layoutY="-60.0" opacity="0.8">
+                     <image>
+                        <Image url="@../asset/sahurda_yathra_logo_4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="26.0" layoutY="15.0">
+                     <image>
+                        <Image url="@../asset/vvs_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="217.0" layoutY="116.0" text="BookShelf">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="36.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff594f" />
+                              <Stop color="#4fbc3c" offset="0.5059446221906229" />
+                              <Stop color="#3c79cf" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="98.0" layoutY="174.0" text="Library Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="100.0" fitWidth="123.0" layoutX="244.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/loadingGIF.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="240.0" layoutY="274.0" text="Loading..." textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="156.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/BookShelf_png.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

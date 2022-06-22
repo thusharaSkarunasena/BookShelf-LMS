@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainDashAnchPane" prefHeight="650.0" prefWidth="1050.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sahurdayathra.BookShelfLMS.controller.MainDashController">
+    <stylesheets>
+        <URL value="@/org/sahurdayathra/BookShelfLMS/view/style/maindash.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="120.0" prefWidth="1050.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="1050.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_5.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="120.0" prefWidth="1050.0">
+               <children>
+                  <JFXHamburger fx:id="mainDashHamburger" layoutX="14.0" layoutY="83.0" opacity="0.9">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXHamburger>
+                  <ImageView fitHeight="110.0" fitWidth="130.0" layoutX="80.0" layoutY="6.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/sahurda_yathra_logo_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="276.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/BookShelf_png.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="331.0" layoutY="27.0" text="BookShelf">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="36.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff594f" />
+                              <Stop color="#4fbc3c" offset="0.5059446221906229" />
+                              <Stop color="#3c79cf" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="68.0" text="Library Management System">
+                     <font>
+                        <Font name="Century Schoolbook Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeTxt" layoutX="877.0" layoutY="37.0" prefHeight="28.0" prefWidth="120.0" text="Time" textFill="#f20000">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Label>
+                  <Label fx:id="dateTxt" layoutX="877.0" layoutY="86.0" prefHeight="15.0" prefWidth="120.0" text="Date" textFill="#f20000">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="120.0" prefHeight="530.0" prefWidth="1050.0">
+         <children>
+            <ImageView fitHeight="530.0" fitWidth="532.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="530.0" fitWidth="532.0" layoutX="521.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="530.0" prefWidth="1050.0">
+               <children>
+                  <JFXDrawer fx:id="mainDashDrawer" prefHeight="530.0" prefWidth="60.0" />
+                  <ImageView fx:id="memberIcon" layoutX="110.0" layoutY="120.0" onMouseClicked="#mainDashIcon_onMouseClicked" onMouseEntered="#mainDashIcon_onMouseEntered" onMouseExited="#mainDashIcon_onMouseExited">
+                     <image>
+                        <Image url="@../asset/icons8_Account_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="userIcon" layoutX="830.0" layoutY="130.0" onMouseClicked="#mainDashIcon_onMouseClicked" onMouseEntered="#mainDashIcon_onMouseEntered" onMouseExited="#mainDashIcon_onMouseExited">
+                     <image>
+                        <Image url="@../asset/icons8_Add_User_Group_Woman_Man_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="booksIcon" layoutX="290.0" layoutY="125.0" onMouseClicked="#mainDashIcon_onMouseClicked" onMouseEntered="#mainDashIcon_onMouseEntered" onMouseExited="#mainDashIcon_onMouseExited">
+                     <image>
+                        <Image url="@../asset/icons8_Books_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="issuedReturnedBookIcon" layoutX="650.0" layoutY="130.0" onMouseClicked="#mainDashIcon_onMouseClicked" onMouseEntered="#mainDashIcon_onMouseEntered" onMouseExited="#mainDashIcon_onMouseExited">
+                     <image>
+                        <Image url="@../asset/issued_Returned_Icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="issueReturnBookIcon" layoutX="470.0" layoutY="130.0" onMouseClicked="#mainDashIcon_onMouseClicked" onMouseEntered="#mainDashIcon_onMouseEntered" onMouseExited="#mainDashIcon_onMouseExited">
+                     <image>
+                        <Image url="@../asset/issue_Return_Icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="titleLbl" alignment="CENTER" layoutX="245.0" layoutY="300.0" prefHeight="41.0" prefWidth="567.0" text="Title" textFill="#0099cc">
+                     <font>
+                        <Font name="Century Gothic" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descriptionLbl" alignment="CENTER" layoutX="225.0" layoutY="360.0" prefHeight="23.0" prefWidth="606.0" text="Description" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

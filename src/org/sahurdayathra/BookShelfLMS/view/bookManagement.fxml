@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="bookManagementAnchPane" prefHeight="650.0" prefWidth="1050.0" styleClass="mainFxmlClass" stylesheets="@style/bookmanagement.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sahurdayathra.BookShelfLMS.controller.BookManagementController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="130.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="130.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_3.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="650.0" prefWidth="130.0" style="-fx-background-color: #FF5C58;">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="7.0" layoutY="525.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/sahurda_yathra_logo_2.png" />
+                     </image>
+                  </ImageView>
+                  <HBox fx:id="homeHBox" onMouseClicked="#homeHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Home_32px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Home">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="publisherHBox" layoutY="120.0" onMouseClicked="#publisherHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Leanpub_32px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Publisher">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="helpHBox" layoutY="300.0" onMouseClicked="#helpHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Help_32px_1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Help">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="bookCategoryHBox" layoutY="60.0" onMouseClicked="#bookCategoryHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Books_32px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Book&#10;Category">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="viewMoreHBox" layoutY="240.0" onMouseClicked="#viewMoreHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_View_More_32px_1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="View&#10;More">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="damagedBookHBox" layoutY="180.0" onMouseClicked="#damagedBookHBox_onMouseClicked" prefHeight="60.0" prefWidth="130.0" styleClass="sidepane-HBox" stylesheets="@style/bookmanagement.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/icons8_Particle_32px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Damaged&#10;Book">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="130.0" prefHeight="60.0" prefWidth="920.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="920.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_4.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="60.0" prefWidth="920.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Manage Books" textFill="#df574b">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="130.0" layoutY="60.0" prefHeight="590.0" prefWidth="920.0">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="594.0" layoutY="-1.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="612.0" fitWidth="587.0" layoutX="326.0" layoutY="-1.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/background_2.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-14.0" layoutY="-2.0" prefHeight="590.0" prefWidth="920.0">
+               <children>
+                  <Pane layoutX="25.0" layoutY="12.0" prefHeight="520.0" prefWidth="340.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 15; -fx-border-width: 2;">
+                     <children>
+                        <JFXComboBox fx:id="bookCategoryComBox" editable="true" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="16.0" onAction="#bookCategoryComBox_onAction" onKeyReleased="#bookCategoryComBox_onKeyReleased" prefHeight="25.0" prefWidth="280.0" promptText="Book Category" />
+                        <JFXTextField fx:id="bookCode_catTxt_TF" editable="false" focusColor="#ff5c58" layoutX="25.0" layoutY="70.0" mouseTransparent="true" prefHeight="25.0" prefWidth="40.0" promptText="ABC">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ISBNTF" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="115.0" onAction="#ISBNNOTF_onAction" prefHeight="25.0" prefWidth="280.0" promptText="ISBN NO">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="bookTitleTF" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="165.0" onAction="#bookTitleTF_onAction" prefHeight="25.0" prefWidth="280.0" promptText="Book Title">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="priceTF" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="370.0" onAction="#priceTF_onAction" prefHeight="25.0" prefWidth="280.0" promptText="Price">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextArea fx:id="otherDetailsTA" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="420.0" prefHeight="50.0" prefWidth="280.0" promptText="Other Details">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font></JFXTextArea>
+                        <JFXTextField fx:id="bookEditionTF" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="220.0" onAction="#bookEditionTF_onAction" prefHeight="25.0" prefWidth="280.0" promptText="Book Edition">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="authorNameTF" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="270.0" onAction="#authorNameTF_onAction" prefHeight="25.0" prefWidth="280.0" promptText="Author Name">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="bookPublisherComBox" editable="true" focusColor="#ff5c58" labelFloat="true" layoutX="25.0" layoutY="320.0" onAction="#bookPublisherComBox_onAction" onKeyReleased="#bookPublisherComBox_onKeyReleased" prefHeight="25.0" prefWidth="280.0" promptText="Book Publisher" />
+                        <JFXTextField fx:id="bookCode_catNum_TF" editable="false" focusColor="#ff5c58" layoutX="72.0" layoutY="70.0" mouseTransparent="true" prefHeight="25.0" prefWidth="40.0" promptText="123">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="bookCode_bookNum_TF" focusColor="#ff5c58" layoutX="119.0" layoutY="70.0" onAction="#bookCode_bookNum_TF_onAction" onKeyReleased="#bookCode_bookNum_TF_onKeyReleased" prefHeight="25.0" prefWidth="40.0" promptText="001">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="bookStatusLbl2" layoutX="105.0" layoutY="490.0" prefHeight="20.0" prefWidth="195.0">
+                           <font>
+                              <Font name="Times New Roman Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bookStatusLbl1" layoutX="25.0" layoutY="490.0" prefHeight="20.0" prefWidth="80.0" text="Book Status : ">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="374.0" layoutY="12.0" prefHeight="520.0" prefWidth="548.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 15; -fx-border-width: 2;">
+                     <children>
+                        <TextField fx:id="searchBoxTF" layoutX="20.0" layoutY="15.0" onKeyReleased="#searchBoxTF_onKeyReleased" onMouseClicked="#searchBoxTF_onMouseClicked" prefHeight="25.0" prefWidth="195.0" promptText="Search">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font></TextField>
+                        <ImageView layoutX="187.0" layoutY="20.0">
+                           <image>
+                              <Image url="@../asset/icons8_Search_16px.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="bookDetailsTbl" layoutX="7.0" layoutY="55.0" onMouseClicked="#bookDetailsTbl_onMouseClicked" prefHeight="451.0" prefWidth="532.0">
+                           <columns>
+                              <TableColumn prefWidth="100.0" text="Book Code" />
+                              <TableColumn prefWidth="120.0" text="Book Title" />
+                              <TableColumn prefWidth="100.0" text="Category" />
+                              <TableColumn prefWidth="110.0" text="Author Name" />
+                              <TableColumn prefWidth="100.0" text="Publisher" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="400.0" layoutY="20.0" text="Row Count : ">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countLbl" layoutX="475.0" layoutY="20.0" prefHeight="18.0" prefWidth="60.0" text="0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnPane" layoutX="23.0" layoutY="538.0" prefHeight="50.0" prefWidth="901.0" style="-fx-border-color: #C7C7C7; -fx-border-radius: 15; -fx-border-width: 2;">
+                     <children>
+                        <JFXButton fx:id="newBtn" buttonType="RAISED" layoutX="190.0" layoutY="10.0" onAction="#newBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="btnPane-newBtn" stylesheets="@style/bookmanagement.css" text="New">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="300.0" layoutY="10.0" onAction="#saveBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="btnPane-saveBtn" stylesheets="@style/bookmanagement.css" text="Save">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="410.0" layoutY="10.0" onAction="#updateBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="btnPane-updateBtn" stylesheets="@style/bookmanagement.css" text="Update">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="520.0" layoutY="10.0" onAction="#deleteBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="btnPane-deleteBtn" stylesheets="@style/bookmanagement.css" text="Delete">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="damageBtn" buttonType="RAISED" layoutX="630.0" layoutY="10.0" onAction="#damageBtn_onAction" prefHeight="30.0" prefWidth="80.0" styleClass="btnPane-damageBtn" stylesheets="@style/bookmanagement.css" text="Damage">
+                           <font>
+                              <Font name="Century Gothic Italic" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label layoutX="91.0" layoutY="96.0" text=".">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="138.0" layoutY="96.0" text=".">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="65.0" text="Book Code" textFill="#8f8f8f" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+.sidepane-HBox{
+    -fx-background-color: transparent;
+}
+
+.sidepane-HBox:hover{
+    -fx-background-color: #FF7370;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0px 0px 0px 4px;
+}
+
+.btnPane-moveBtn{
+    -fx-background-color: #00BD93;
+    -fx-background-radius: 22;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #00BD93;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.btnPane-moveBtn:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-text-fill: #00BD93;
+    -fx-border-color: #00BD93;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.btnPane-deleteBtn{
+    -fx-background-color: #DF574B;
+    -fx-background-radius: 22;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #DF574B;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.btnPane-deleteBtn:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-text-fill: #DF574B;
+    -fx-border-color: #DF574B;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.btnPane-clearBtn{
+    -fx-background-color: #FF7800;
+    -fx-background-radius: 22;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.btnPane-clearBtn:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-text-fill: #FF7800;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}

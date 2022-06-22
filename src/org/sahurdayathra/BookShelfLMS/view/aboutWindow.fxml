@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aboutWindowAnchPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sahurdayathra.BookShelfLMS.controller.AboutWindowController">
+    <stylesheets>
+        <URL value="@/org/sahurdayathra/BookShelfLMS/view/style/aboutwindow.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../asset/background_1.jpg" />
+               </image>
+            </ImageView>
+            <Pane opacity="0.7" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #171932;">
+               <children>
+                  <ImageView fitHeight="206.0" fitWidth="197.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/BookShelf_png.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="230.0" layoutY="20.0" text="BookShelf">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="44.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff594f" />
+                              <Stop color="#4fbc3c" offset="0.5059446221906229" />
+                              <Stop color="#3c79cf" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="75.0" text="Library Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="250.0" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+                     <children>
+                        <Label layoutX="7.0" layoutY="130.0" text="This Software is Developed by Thushara Supun~(KAIRA) for 'Sahurda Yathra' Project in 2019 with VVS Brothers." textFill="WHITE" />
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="242.0" layoutY="15.0">
+                           <image>
+                              <Image url="@../asset/vvs_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="325.0" layoutY="-60.0">
+                           <image>
+                              <Image url="@../asset/sahurda_yathra_logo_4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="90.0" layoutY="5.0">
+                           <image>
+                              <Image url="@../asset/sahurda_yathra_logo_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="230.0" layoutY="120.0" text="1.0.0.1 (32-bit)" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="160.0" text="BookShelf LMS :: Windows-Platform JavaFX Application&#10;for Managing Library." textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="copyrightLbl" layoutX="230.0" layoutY="210.0" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

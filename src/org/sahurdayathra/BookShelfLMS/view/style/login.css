@@ -1,0 +1,17 @@
+.logInPane-logInBtn{
+    -fx-background-color: #FF7800;
+    -fx-background-radius: 22;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.logInPane-logInBtn:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-text-fill: #FF7800;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
