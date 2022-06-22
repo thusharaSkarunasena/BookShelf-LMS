@@ -38,7 +38,7 @@ This application was developed as a part of volunteer work "Sahurdayathra" ([sah
 10. The system administrator can create two types of user accounts, local and admin. The username and password can be edited in the edit profile window.
 
 ## Troubleshooting
-If you have got ‘JRE Not Found’ or ‘JRE Missing’ error from your OS when you are going to play the game first time. That means first of all ‘JRE’ should be install into your computer. So in such like case, Please visit [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest ‘JRE 8’ version suitable for your OS.
+If you have got ‘JRE Not Found’ or ‘JRE Missing’ error from your OS when you are going to run the application first time. That means first of all ‘JRE’ should be install into your computer. So in such like case, Please visit [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest ‘JRE 8’ version suitable for your OS.
 
 This application needs 'MYSQL' server to be installed and a database should be created with the name 'BookShelfLMS'. Also, required tables and stored procedures should be created in the database. 
 Download MYSQL by visiting [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/) and database source code can be found in the 'src/org/sahurdayathra/BookShelfLMS/db' folder.
