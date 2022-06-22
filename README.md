@@ -2,7 +2,7 @@
 # <img src="https://i.ibb.co/193vNhd/Book-Shelf-icon.png" width="30" height="30">  BookShelf -  Library Management System
 
 ## Introduction
-This application was developed as a part of volunteer work "Sahurdayathra" ([sahurdayathra.org](sahurdayathra.org)) which was a project to build a complete library for a rural school. 
+This application was developed as a part of volunteer work "Sahurdayathra" ([sahurdayathra.org](http://www.sahurdayathra.org/?i=1)) which was a project to build a complete library for a rural school. 
 'BookShelf LMS's purpose was to computerize all the work that was already done by hand including managing library members, managing book details, keeping track of issued returned books etc.
 
 ## Screenshots
